@@ -1,0 +1,31 @@
+.DB {
+    background-color: #a3cef5 !important;
+}
+.db1{
+    background-color: white;
+}
+.job{
+    font-size: 50px; 
+}
+.job:hover{
+   color: cadetblue;
+}
+.job-px{
+ padding-left: 180px !important;  
+}
+
+.DB3{
+    background-color: #a3cef5;
+    height: 900px;
+}
+.lis {
+    float: left;
+    padding: 30px 50px;
+    margin-right: 18px;
+}
+.menupd{
+    margin-bottom: 540px;
+}
+#Menus{
+    margin-left: 275px ;
+}

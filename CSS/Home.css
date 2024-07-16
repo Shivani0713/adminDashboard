@@ -1,0 +1,30 @@
+body{
+    background-image: url(./Image/login.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cfh{
+    background-color:#38389f;
+    height: 739px;
+    width: 1200px;
+    opacity: 0.6;
+}
+
+.cfimg{
+    margin-top: 50px;
+    margin-left: 20px;
+    width :200px;
+    height:100px;
+    mix-blend-mode: hard-light;
+}
+
+.clog{
+    padding-left: 375px !important;
+}
+
+.fclabel{
+    padding-left: 185px;
+}
+.fhp{
+    padding-right: 445px;
+}

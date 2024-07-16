@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin DashBoard</title>
+    <link rel="icon" type="image/x-icon" href="./Image/title.ico">
+    <link rel="stylesheet" href="./CSS/Home1.css">
+    <!-- <link rel="stylesheet" href="./CSS/SubMenu.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Side Panel -->
+    <div class="d-flex">
+        <div class="flex-shrink-0 " id="aside1">
+            <aside class="aside pb-5">
+                <div class="top">
+                    <div class="logo text-center">
+                        <img src="./Image/title.jpeg" class="my-3 rounded" width="100px" height="40px" alt="">
+                    </div>
+
+                    <div class="card brdcrd mb-3 mx-4  clr" style="max-width:250px;">
+                        <div class="row col-md-12">
+                            <div class="col-md-4">
+                                <img src="./Image/p1.png" alt="Admin" width="100px" height="100px"
+                                    class="rounded-circle text-light">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body ms-1 text-light">
+                                    <h5 class="card-title">&nbsp;Admin DashBoard</h5>
+                                    <p class="card-text">&nbsp;Username</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="list-unstyled ms-5 text-light fs-5">Feature
+                    <li class=" my-2 text-light fs-6">
+                        <div class="hovyell" id="dash" onclick="myFunctiond()">
+                            <i class="fa fa-solid fa-grip pe-2"></i>
+                            <span class="fst-italic">DashBoard</span>
+                        </div>
+                    </li>
+                    <li class="my-2 text-light fs-6">
+                        <div class="hovyell" id="dash" onclick="myFunctiond1()">
+                            <i class="fa fa-solid fa-message pe-2"></i>
+                            <span class="fst-italic">Message</span>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="list-unstyled ms-5 text-light fs-5">Recruitment
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa fa-solid fa-suitcase pe-2"></i>
+                        <span class="fst-italic">Job</span>
+                    </li>
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa-solid fa-users pe-2"></i>
+                        <span class="fst-italic">Candidate</span>
+                    </li>
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa-solid fa-scroll pe-2"></i>
+                        <span class="fst-italic">Resume</span>
+                    </li>
+                </ul>
+                <ul class="list-unstyled ms-5 text-light fs-5">Orginization
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa fa-solid fa-user pe-2"></i>
+                        <span class="fst-italic">Employment Management</span>
+                    </li>
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa fa-solid fa-book-open pe-2"></i>
+                        <span class="fst-italic">Leave Management</span>
+                    </li>
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa fa-solid fa-scale-unbalanced-flip pe-2"></i>
+                        <span class="fst-italic">Performance Management</span>
+                    </li>
+                </ul>
+                <ul class="list-unstyled ms-5 text-light fs-5"> Pay
+                    <li class="my-2  text-light fs-6">
+                        <i class="fa fa-solid fa-money-check-dollar pe-2"></i>
+                        <span class="fst-italic">Payroll Management</span>
+                    </li>
+                </ul>
+                <div class="text-center d-grid gap-2 col-10 pt-3 mx-auto">
+                    <a href="Login.html" class="btn btn-danger">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Log Out</span>
+                    </a>
+                </div>
+            </aside>
+        </div>
+        <!-- DashBoard -->
+        <div class="w-100 DB DB1">
+            <div class="container-fluid dash mt-3">
+                <!-- navbar -->
+                <nav class="navbar DB container">
+                    <div class="container-fluid">
+                        <a class="navbar-brand menu-btn" id="menu">
+                            <i class="fa-solid fa-bars fs-5">
+                            </i>
+                        </a>
+                        <form class="d-flex btn-group btnmed" role="search">
+                            <button class="btn btn-outline-danger all rounded-start" type="submit">All Candidate</button>
+                            <input class="form-control fcip rounded-end-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <i class="fs fa-solid fa-magnifying-glass incon"></i>
+                        </form>
+                        <div class="d-flex fs-4">
+                            <i class="fa-solid fa-bell pe-3 text-primary"></i>
+                            <i class="fa-solid fa-envelope pe-3 text-success "></i>
+                            <i class="fa-solid fa-wrench pe-3 text-warning"></i>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Heading -->
+                <h5 class="mt-5 pb-2 ms-5 fw-bold"> DashBoard</h5>
+                <div id="cards" class="DB">
+                    <!-- card of icon -->
+                        <ul class="list-unstyled my-5" id="ul1">
+                            <li class="li">
+                                <div class="rounded bg-warning">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa-solid fa-envelope  fsi py-2 ps-2"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="fs-6 ps-1 pt-2">138 <br>Messages</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-primary">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa fa-solid fa-suitcase text-light fsi py-2 ps-3"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="ps-4 py-2 text-light fs-6">50 <br> Jobs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-success">
+                                    <div class="row">
+                                        <div class="col-4 pt-2">
+                                            <i class="fa-solid fa-users text-light fsi1 py-2 ps-3"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="text-light fs-6 ps-2 py-2">100 <br> Candidates</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-dark">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa-solid fa-file text-light fsi ps-3 py-2 "></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="ps-2 py-2 fs-6 text-light">50 <br> Resumes</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-warning">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa-solid fa-user fsi ps-2 py-2 "></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="fs-6 py-2">200<br>Employee</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-primary">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa fa-solid fa-book-open text-light fsi py-1 ps-2"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="ps-3 py-2 text-light fs-6">20<br>Leaves</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="li">
+                                <div class="rounded bg-success">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <i class="fa-solid fa-money-check-dollar text-light fsi1 ps-3 py-2"></i>
+                                        </div>
+                                        <div class="col-8">
+                                            <h5 class="text-light fs-6 ps-3 py-2">200 <br> Payrolls</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    <!-- card of menu -->
+                    <div class="container overflow-hidden pt-5">
+                        <div class="row mb-5 ">
+                            <!-- col1 -->
+                            <div class="col-5 mb-5  bg-white rounded pb-3 mx">
+                                <div class="d-flex flex-row mb-3 mt-2">
+                                    <div class="col-11 pt-3 fs-5 fw-bold ps-3">Applied Jobs</div>
+                                    <div class="col-1 pt-3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1 "> <img src="./Image/sale.jpeg" class="img-fluid rounded ps-2"
+                                            alt="..." width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8 ">
+                                        <h5 class="fs-6">Sales Executive</h5>
+                                        <span class="fs-6">Access Bank</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span> <small>3 mins ago</small> </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1"> <img src="./Image/User.png" class="img-fluid rounded ps-2"
+                                            alt="..." width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="fs-6">User Design Experience</h5>
+                                        <span class="fs-6">Payback</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span> <small>13 mins ago</small> </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1"> <img src="./Image/TPay.jpeg" class="img-fluid rounded ps-2"
+                                            alt="..." width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <h5 class="fs-6">Product Manager</h5>
+                                        <span class="fs-6">T-Pay</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <span> <small>10 mins ago</small> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col2 -->
+                            <div class="col-5 mb-5  bg-white rounded pb-1">
+                                <div class="d-flex flex-row mb-3 mt-2">
+                                    <div class="col-11 pt-3 fs-5 fw-bold ps-3">Employee</div>
+                                    <div class="col-1 pt-3 "><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1"> <img src="./Image/p2.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="fs-6 ">John Doe<br>Role: Product Manager</div>
+                                    </div>
+                                    <div class="col-2 py-2">
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1"> <img src="./Image/p3.png" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="fs-6">Ginna Leo<br>Role: Sale Manager</div>
+                                    </div>
+                                    <div class="col-2 py-2">
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 py-3 rounded">
+                                    <div class="col-2 ps-1"> <img src="./Image/p4.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="fs-6">Ginna Leo<br>Role: UX/UI Designer</div>
+                                    </div>
+                                    <div class="col-2 py-2">
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col3 -->
+                            <div class="col-5  bg-white rounded  mx">
+                                <div class="d-flex flex-row mb-3 mt-2">
+                                    <div class="col-10 pt-3 fs-5 fw-bold  ps-2">Candidates</div>
+                                    <div class="col-2 pt-3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2  mb-3 rounded">
+                                    <div class="col-2"> <img src="./Image/p2.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="fs-6">John Doe<br>Applied for : Product Manager</div>
+                                    </div>
+                                    <div class="col-2 py-2"><small>ATS Score</small>
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                    </div>
+                                    <div class="col-1 py-2"><small>View</small>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 mb-3 rounded">
+                                    <div class="col-2"> <img src="./Image/p3.png" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="fs-6">John Doe<br>Applied for : Product Manager</div>
+                                    </div>
+                                    <div class="col-2 py-2"><small>ATS Score</small>
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                    </div>
+                                    <div class="col-1 py-2"><small>View</small>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 py-2 mb-3 rounded">
+                                    <div class="col-2"> <img src="./Image/p4.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="fs-6">John Doe<br>Applied for : Product Manager</div>
+                                    </div>
+                                    <div class="col-2 py-2"><small>ATS Score</small>
+                                        <i class="fa-solid fa-eye fs-2 text-success"></i>
+                                    </div>
+                                    <div class="col-1 py-2"><small>View</small>
+                                        <i class="fa-solid fa-download fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- col4 -->
+                            <div class="col-5  bg-white rounded pb-1">
+                                <div class="d-flex flex-row mb-3 mt-2">
+                                    <div class="col-10 pt-3 fs-5 fw-bold  ps-2">April Payroll</div>
+                                    <div class="col-2 pt-3"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                                </div>
+                                <div class="d-flex flex-row DB mx-2 py-2 mb-3 rounded">
+                                    <div class="col-2"> <img src="./Image/p4.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="fs-6">John Doe<br>Product Manager</div>
+                                    </div>
+                                    <div class="col-5 text-center"><span><small>Processing</small>
+                                            <div class="progress" style="height:10px; width:180px">
+                                                <div class="progress-bar bg-warning" style="width:40%;"></div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB mb-3 py-3 mx-2 rounded">
+                                    <div class="col-2"> <img src="./Image/p2.jpeg" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="fs-6">John Doe<br>Product Manager</div>
+                                    </div>
+                                    <div class="col-5 text-center">
+                                        <span><small>Paid</small>
+                                            <div class="progress" style="height:10px; width:180px">
+                                                <div class="progress-bar bg-success" style="width:100%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row DB rounded mx-2 mb-3 py-3">
+                                    <div class="col-2"> <img src="./Image/p3.png" class=" rounded ps-2" alt="..."
+                                            width="50px" height="50px">
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="fs-6 ">Jina Doe<br>UX/UI Desinger</div>
+                                    </div>
+                                    <div class="col-5 text-center">
+                                        <span><small>Processing</small>
+                                            <div class="progress" style="height:10px; width:180px">
+                                                <div class="progress-bar bg-warning" style="width:30%;"></div>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+   
+        <script src="./JS/DB.js"></script>
+        <script src="./JS/DB1.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#dash").on("click", function(){
+                    $.ajax({
+                    url: 'Menu.html',
+                    success: function(data) {
+                        console.log(data)
+                        $("#cards").html(data);
+                    }
+                    });
+                });
+            });
+        </script>
+        <script>
+            // function myFunction() {
+            //     document.querySelector(".hovyell").style.color = "Orange";
+            //     }
+
+            // if(document.querySelector("#per_det"))
+            //     function myFunction1() {
+            //         document.querySelector("#per_det").style.color = "hwb(60 24% 36%)";
+
+            //     }
+            // else if( document.querySelector("#job_det")){
+            //     function myFunction2() {
+            //     document.querySelector("#job_det").style.color = "hwb(60 24% 36%)";
+            //    }
+            // }
+            // else if(document.querySelector("#fam_det")){
+            //     function myFunction3() {
+            //     document.querySelector("#fam_det").style.color = "hwb(60 24% 36%)";
+            //     }
+            // }
+            // else{
+            //     function myFunction4() {
+            //    document.querySelector("#edu_qul").style.color = "hwb(60 24% 36%)";
+            //     }
+            // }
+        </script>
+</body>
+
+</html>

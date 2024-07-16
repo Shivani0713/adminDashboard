@@ -1,0 +1,168 @@
+.brdcrd {
+    border: 0px !important;
+}
+
+.aside {
+    background-color: #4545cf;
+    position: fixed;
+    /* overflow: hidden; */
+}
+
+.clr {
+    background-color: #4545cf !important;
+}
+
+.fcip {
+    width: 400px !important;
+}
+
+.DB1 {
+    margin-left: 290px;
+    margin-right: 0px;
+}
+
+.DB2 {
+    margin-left: 290px;
+}
+
+.DB {
+    background-color: #a3cef5 !important;
+}
+
+.dash {
+    padding: 0px -5px !important;
+}
+
+.incon {
+    position: absolute;
+    margin-left: 482px;
+    margin-top: 12px;
+}
+
+.fsi {
+    font-size: 50px !important;
+}
+
+.fsi1 {
+    font-size: 40px !important;
+}
+
+.pdi {
+    padding-left: 296px !important;
+}
+
+.pdi1 {
+    padding-left: 120px !important;
+}
+
+.pdi2 {
+    padding-left: 144px !important;
+}
+
+.pdi3 {
+    padding-left: 136px !important;
+}
+
+.tpl {
+    padding-left: 195px;
+}
+
+.tpl1 {
+    padding-left: 220px;
+}
+
+.tpl2 {
+    padding-left: 240px;
+}
+
+.li {
+    float: left;
+    margin-left: 15px;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+}
+.mx {
+    margin-right: 35px;
+    margin-left: 84px;
+}
+
+#aside1.active {
+    animation: slide-in 0.3s ease-in-out;
+}
+/* ul:not(.active){
+    padding-left: 140px;
+} */
+
+#aside1:not(.active) {
+    animation: slide-out 0.3s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    to {
+        margin-right: 295px;
+       
+    }
+}
+
+@keyframes slide-out {
+    to {
+        margin-left: -295px;
+    }
+}
+
+@media screen  and (max-width:320px){
+    .fcip {
+        width: 177px !important;
+    }
+    .incon {
+        position: absolute;
+        margin-left: 239px;
+        margin-top: 5px;
+    }
+
+    h5{
+        text-align: center;
+    }
+    .btnmed{
+        height: 25px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .all{
+        font-size: 10px !important;
+    }
+    #ul1{
+        margin-left: 50px;
+        
+    }
+    .li{
+        width: 160px !important;
+        margin-bottom: 10px !important;
+    }
+    .col-5 {
+        width: 100% !important;
+    }
+    .mx {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.hovyell:hover{
+    cursor: pointer;
+    color: hwb(60 24% 36%);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hovyell::after{
+    color: #ff8000;
+}
+
+.submenu:hover{
+    color: #ff8000;
+    cursor: pointer;
+    font-style: italic;
+}
